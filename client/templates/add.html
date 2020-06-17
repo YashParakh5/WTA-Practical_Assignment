@@ -1,0 +1,27 @@
+<div class="panel panel-default" style="color: coral;">
+	<div class="panel-heading" style="background-color: coral; color: white;">
+	  <p class="panel-title"><span class="glyphicon glyphicon-plus"> </span> Add New Employee</p>
+	</div>
+	<div class="panel-body">
+		<form ng-submit="addEmployee()">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="name" ng-model="employee.name" placeholder="Enter Firstname Lastname">
+      <label for="dept">Department:</label>
+      <input type="text" class="form-control" id="dept" ng-model="employee.dept" placeholder="Enter Department">
+      <label for="city">City:</label>
+      <input type="text" class="form-control" id="city" ng-model="employee.city" placeholder="Enter Current City of Residence">
+      <label for="state">State:</label>
+      <input type="text" class="form-control" id="state" ng-model="employee.state" placeholder="Enter Current State of Residence">
+      <label for="contact">Contact E-Mail :</label>
+      <input type="text" class="form-control" id="contact" ng-model="employee.contact" placeholder="Enter E-Mail Contact">
+      <label for="position">Position :</label>
+      <input type="text" class="form-control" id="position" ng-model="employee.position" placeholder="Enter Current Designation">
+      <label for="salary">Salary :</label>
+      <input type="text" class="form-control" id="salary" ng-model="employee.salary" placeholder="Enter Current Salary per month in INR">
+    </div>
+    <button type="submit" style="color: white; background-color: coral;" class="btn">Save</button>
+    <a href="#/employees" class="btn btn-default"> Cancel</a>
+    </form>		
+  </div>
+</div>

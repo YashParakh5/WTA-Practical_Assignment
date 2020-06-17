@@ -1,0 +1,27 @@
+<div class="panel panel-default" ng-init="showEmployee()" style="color: slateblue;">
+	<div class="panel-heading" style="background-color: slateblue; color: white;">
+	  <p class="panel-title"><span class="glyphicon glyphicon-edit"> </span> Edit Employee</p>
+	</div>
+	<div class="panel-body">
+		<form ng-submit="updateEmployee()">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="name" ng-model="employee.name" value="employee.name">
+      <label for="dept">Department:</label>
+      <input type="text" class="form-control" id="dept" ng-model="employee.dept" value="employee.dept">
+      <label for="city">City:</label>
+      <input type="text" class="form-control" id="city" ng-model="employee.city" value="employee.city">
+      <label for="state">State:</label>
+      <input type="text" class="form-control" id="state" ng-model="employee.state" value="employee.state">
+      <label for="contact">Contact No. :</label>
+      <input type="text" class="form-control" id="contact" ng-model="employee.contact" value="employee.contact">
+      <label for="position">Position :</label>
+      <input type="text" class="form-control" id="position" ng-model="employee.position" value="employee.position">
+      <label for="salary">Salary :</label>
+      <input type="text" class="form-control" id="salary" ng-model="employee.salary" value="employee.salary">
+    </div>
+    <button type="submit" style="color: white; background-color: slateblue;" class="btn">Update</button>
+    <a href="#/employees" class="btn btn-default"> Cancel</a>
+    </form>		
+    <div>
+<div>
